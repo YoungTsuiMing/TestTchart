@@ -19,7 +19,6 @@ type
     btn_add: TButton;
     btn_addLine: TButton;
     mmo1: TMemo;
-    fstlnsrsSeries1: TFastLineSeries;
     procedure btn1Click(Sender: TObject);
     procedure btn_addClick(Sender: TObject);
     procedure btn_addLineClick(Sender: TObject);
@@ -93,12 +92,12 @@ begin
   Chart3.AddSeries(series3);    //有这个才能显示
   Chart3.AddSeries(series4);    //有这个才能显示
 
-  Chart3.Color := clWhite;        //底色
+  Chart3.Color := clYellow;        //底色
   //Chart3.BackColor := clGreen;     //图表部分的背景色
   Chart3.Gradient.Visible := True;       //渐变的背景色
   //Chart3.Gradient.Direction := gdFromTopLeft;
-  //Chart3.Gradient.StartColor := clGreen;
-  //Chart3.Gradient.EndColor := clYellow;
+  Chart3.Gradient.StartColor := clGreen;
+  Chart3.Gradient.EndColor := clYellow;
   //series.Title := '嘿嘿';
   //Chart3.Series[0].HorizAxis := aBothHorizAxis;
   //Chart3.Series[0].VertAxis := aBothVertAxis;

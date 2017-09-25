@@ -163,13 +163,11 @@ object Form13: TForm13
     TabOrder = 1
     ColorPaletteIndex = 13
     object hrzbrsrsSeries1: THorizBarSeries
-      BarBrush.Gradient.Direction = gdLeftRight
       Marks.Arrow.Visible = True
       Marks.Callout.Brush.Color = clBlack
       Marks.Callout.Arrow.Visible = True
       Marks.Visible = True
       Emboss.Color = 8487297
-      Gradient.Direction = gdLeftRight
       Shadow.Color = 8487297
       XValues.Name = 'Bar'
       XValues.Order = loNone

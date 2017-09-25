@@ -1,0 +1,184 @@
+object Form13: TForm13
+  Left = 0
+  Top = 0
+  Caption = #27979#35797#25968#25454#22823#30424
+  ClientHeight = 834
+  ClientWidth = 1426
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Chart1: TChart
+    Left = 8
+    Top = 2
+    Width = 650
+    Height = 399
+    Cursor = crArrow
+    BackWall.Brush.BackColor = clBlack
+    Gradient.Visible = True
+    Title.Text.Strings = (
+      #39292#22270)
+    Chart3DPercent = 30
+    View3D = False
+    View3DOptions.Orthogonal = False
+    View3DOptions.Perspective = 0
+    Color = clCream
+    TabOrder = 0
+    PrintMargins = (
+      15
+      38
+      15
+      38)
+    ColorPaletteIndex = 13
+    object psrsSeries1: TPieSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = True
+      XValues.Order = loAscending
+      YValues.Name = 'Pie'
+      YValues.Order = loNone
+      Frame.InnerBrush.BackColor = clRed
+      Frame.InnerBrush.Gradient.EndColor = clGray
+      Frame.InnerBrush.Gradient.MidColor = clWhite
+      Frame.InnerBrush.Gradient.StartColor = 4210752
+      Frame.InnerBrush.Gradient.Visible = True
+      Frame.MiddleBrush.BackColor = clYellow
+      Frame.MiddleBrush.Gradient.EndColor = 8553090
+      Frame.MiddleBrush.Gradient.MidColor = clWhite
+      Frame.MiddleBrush.Gradient.StartColor = clGray
+      Frame.MiddleBrush.Gradient.Visible = True
+      Frame.OuterBrush.BackColor = clGreen
+      Frame.OuterBrush.Gradient.EndColor = 4210752
+      Frame.OuterBrush.Gradient.MidColor = clWhite
+      Frame.OuterBrush.Gradient.StartColor = clSilver
+      Frame.OuterBrush.Gradient.Visible = True
+      Frame.Visible = False
+      Frame.Width = 4
+      OtherSlice.Legend.Visible = False
+      Data = {
+        04030000000000000000088940FF04000000436172730000000000808840FF06
+        00000050686F6E65730000000000806940FF060000005461626C6573}
+    end
+  end
+  object Chart2: TChart
+    Left = 664
+    Top = -22
+    Width = 745
+    Height = 750
+    Foot.Text.Strings = (
+      #26609#29366#22270)
+    Title.Alignment = taRightJustify
+    Title.Font.Color = 4194368
+    Title.Text.Strings = (
+      #20316#19994#31561#24453#30417#25511)
+    View3D = False
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object hrzbrsrsSeries1: THorizBarSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = True
+      Emboss.Color = 8487297
+      Shadow.Color = 8487297
+      XValues.Name = 'Bar'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loAscending
+      Data = {
+        04180000000000000000C87440FF01000000310000000000007440FF01000000
+        320000000000487740FF01000000330000000000707240FF0100000034000000
+        0000706740FF01000000350000000000A06440FF010000003600000000005881
+        40FF01000000370000000000588140FF01000000380000000000588140FF0100
+        0000390000000000588140FF0200000031300000000000588140FF0200000031
+        310000000000588140FF0200000031320000000000588140FF02000000313300
+        00000000588140FF0200000031340000000000588140FF020000003135000000
+        0000588140FF0200000031360000000000588140FF0200000031370000000000
+        588140FF0200000031380000000000588140FF02000000313900000000005881
+        40FF0200000032300000000000588140FF0200000032310000000000588140FF
+        0200000032320000000000588140FF0200000032330000000000588140FF0200
+        00003234}
+    end
+    object hrzbrsrsSeries2: THorizBarSeries
+      BarBrush.Gradient.Direction = gdLeftRight
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = True
+      Emboss.Color = 8553090
+      Gradient.Direction = gdLeftRight
+      Shadow.Color = 8553090
+      XValues.Name = 'Bar'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loAscending
+      Data = {
+        04180000003433333333176340FF01000000319A99999999596640FF01000000
+        32CDCCCCCCCC246940FF0100000033CDCCCCCCCC246940FF0100000034000000
+        0000076940FF01000000356666666666B86440FF010000003600000000008046
+        40FF01000000370000000000C07B40FF01000000380000000000C07B40FF0100
+        0000390000000000C07B40FF0200000031300000000000C07B40FF0200000031
+        310000000000C07B40FF0200000031320000000000C07B40FF02000000313300
+        00000000C07B40FF0200000031340000000000C07B40FF020000003135000000
+        0000C07B40FF0200000031360000000000C07B40FF0200000031370000000000
+        C07B40FF0200000031380000000000C07B40FF0200000031390000000000C07B
+        40FF0200000032300000000000C07B40FF0200000032310000000000C07B40FF
+        0200000032320000000000C07B40FF0200000032330000000000C07B40FF0200
+        00003234}
+    end
+  end
+  object Chart3: TChart
+    Left = 8
+    Top = 407
+    Width = 650
+    Height = 345
+    Title.Text.Strings = (
+      #32447#24615#22270)
+    TabOrder = 2
+    OnMouseMove = Chart3MouseMove
+    ColorPaletteIndex = 13
+  end
+  object btn1: TButton
+    Left = 616
+    Top = 793
+    Width = 82
+    Height = 25
+    Caption = 'btn1'
+    TabOrder = 3
+    OnClick = btn1Click
+  end
+  object btn_add: TButton
+    Left = 672
+    Top = 734
+    Width = 75
+    Height = 25
+    Caption = #26032#22686
+    TabOrder = 4
+    OnClick = btn_addClick
+  end
+  object btn_addLine: TButton
+    Left = 8
+    Top = 758
+    Width = 75
+    Height = 25
+    Caption = 'btn_addLine'
+    TabOrder = 5
+    OnClick = btn_addLineClick
+  end
+  object mmo1: TMemo
+    Left = 112
+    Top = 758
+    Width = 169
+    Height = 54
+    Lines.Strings = (
+      'mmo1')
+    TabOrder = 6
+  end
+end

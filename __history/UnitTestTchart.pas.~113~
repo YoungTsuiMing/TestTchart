@@ -19,7 +19,6 @@ type
     btn_add: TButton;
     btn_addLine: TButton;
     mmo1: TMemo;
-    fstlnsrsSeries1: TFastLineSeries;
     procedure btn1Click(Sender: TObject);
     procedure btn_addClick(Sender: TObject);
     procedure btn_addLineClick(Sender: TObject);
@@ -85,20 +84,18 @@ begin
     series1.AddXY(i, Random(100), IntToStr(i), clBlue);
     series2.AddXY(i, Random(100), IntToStr(i), clRed);
     series3.AddXY(i, Random(100), IntToStr(i), clYellow);
-    series4.AddXY(i, Random(100), IntToStr(i), clAqua);
+    series4.AddXY(i, Random(100), IntToStr(i), clYellow);
   end;
 
   Chart3.AddSeries(series1);    //有这个才能显示
   Chart3.AddSeries(series2);    //有这个才能显示
-  Chart3.AddSeries(series3);    //有这个才能显示
-  Chart3.AddSeries(series4);    //有这个才能显示
 
-  Chart3.Color := clWhite;        //底色
+  Chart3.Color := clYellow;        //底色
   //Chart3.BackColor := clGreen;     //图表部分的背景色
   Chart3.Gradient.Visible := True;       //渐变的背景色
   //Chart3.Gradient.Direction := gdFromTopLeft;
-  //Chart3.Gradient.StartColor := clGreen;
-  //Chart3.Gradient.EndColor := clYellow;
+  Chart3.Gradient.StartColor := clGreen;
+  Chart3.Gradient.EndColor := clYellow;
   //series.Title := '嘿嘿';
   //Chart3.Series[0].HorizAxis := aBothHorizAxis;
   //Chart3.Series[0].VertAxis := aBothVertAxis;

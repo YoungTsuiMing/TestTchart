@@ -19,7 +19,6 @@ type
     btn_add: TButton;
     btn_addLine: TButton;
     mmo1: TMemo;
-    fstlnsrsSeries1: TFastLineSeries;
     procedure btn1Click(Sender: TObject);
     procedure btn_addClick(Sender: TObject);
     procedure btn_addLineClick(Sender: TObject);

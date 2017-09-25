@@ -134,18 +134,28 @@ object Form13: TForm13
       15
       38)
     ColorPaletteIndex = 13
-    object fstlnsrsSeries1: TFastLineSeries
-      Cursor = crArrow
+    object blsrsSeries1: TBubbleSeries
       Marks.Arrow.Visible = True
       Marks.Callout.Brush.Color = clBlack
       Marks.Callout.Arrow.Visible = True
-      Marks.Shadow.Color = 8553090
+      Marks.Emboss.Color = 8487297
+      Marks.Frame.Visible = False
+      Marks.Shadow.Color = 8487297
       Marks.Visible = False
-      LinePen.Color = 10708548
+      ClickableLine = False
+      Pointer.Brush.Gradient.EndColor = 6144242
+      Pointer.Gradient.EndColor = 6144242
+      Pointer.HorizSize = 58
+      Pointer.InflateMargins = False
+      Pointer.Style = psCircle
+      Pointer.VertSize = 58
+      Pointer.Visible = True
       XValues.Name = 'X'
       XValues.Order = loAscending
       YValues.Name = 'Y'
       YValues.Order = loNone
+      RadiusValues.Name = 'Radius'
+      RadiusValues.Order = loNone
     end
   end
   object Chart2: TChart
@@ -163,13 +173,11 @@ object Form13: TForm13
     TabOrder = 1
     ColorPaletteIndex = 13
     object hrzbrsrsSeries1: THorizBarSeries
-      BarBrush.Gradient.Direction = gdLeftRight
       Marks.Arrow.Visible = True
       Marks.Callout.Brush.Color = clBlack
       Marks.Callout.Arrow.Visible = True
       Marks.Visible = True
       Emboss.Color = 8487297
-      Gradient.Direction = gdLeftRight
       Shadow.Color = 8487297
       XValues.Name = 'Bar'
       XValues.Order = loNone
@@ -224,7 +232,6 @@ object Form13: TForm13
     Height = 345
     Title.Text.Strings = (
       #32447#24615#22270)
-    RightAxis.Axis.Width = 4
     TabOrder = 2
     OnMouseMove = Chart3MouseMove
     ColorPaletteIndex = 13
